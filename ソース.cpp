@@ -26,7 +26,8 @@ struct MemoryOne {
 	//type MemoryWord = unsigned char:
 	typedef unsigned char Word;
 	Word Strage;
-	TypeAndValue(*F)(TypeAndValue&, Word&)=NULL;
+	//TypeAndValue(*F)(TypeAndValue&, Word&)=NULL;
+	Lambadas L;
 };
 
 struct MemoryStructOne {
@@ -34,14 +35,11 @@ struct MemoryStructOne {
 	typedef unsigned char T;
 	T Info;//Šæ’£‚Á‚Ä–„‚ß‚æ‚¤
 
-	TypeAndValue A;
-	TypeAndValue B;
-	TypeAndValue R;
-
 	Vector<MemoryOne> Memory;
-	TypeAndValue(*F)(TypeAndValue&, TypeAndValue&)=NULL;//vc cant compile it by writing time.
+	//TypeAndValue(*F)(TypeAndValue&, TypeAndValue&)=NULL;//vc cant compile it by writing time.
+	Lambadas L;
 };
-/**/
+/** /
 struct MemoryBigSpace {
 	//type T=NULL:
 	typedef unsigned char T;
@@ -49,6 +47,7 @@ struct MemoryBigSpace {
 
 	Vector<MemoryStructOne> Memory;
 
-	Vector<TypeAndValue(*)(TypeAndValue&,TypeAndValue& B)> Lamdas;
+	//Vector<TypeAndValue(*)(TypeAndValue&,TypeAndValue& B)> Lamdas;
+	Lambadas L;
 };
 /**/
