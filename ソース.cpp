@@ -39,5 +39,6 @@ struct MemoryBigSpace {
 	T Info;//Šæ’£‚Á‚Ä–„‚ß‚æ‚¤
 
 	Vector<MemoryStructOne> Memory;
+	Vector<Type(*)(Type&, Type&)> Lamdas;
 };
 /**/
